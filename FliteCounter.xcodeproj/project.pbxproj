@@ -13,6 +13,10 @@
 		8767FAFF25A31F33004C7942 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8767FAFD25A31F33004C7942 /* Main.storyboard */; };
 		8767FB0125A31F37004C7942 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8767FB0025A31F37004C7942 /* Assets.xcassets */; };
 		8767FB0425A31F37004C7942 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8767FB0225A31F37004C7942 /* LaunchScreen.storyboard */; };
+		8767FB1225A329FB004C7942 /* FlightManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767FB1125A329FB004C7942 /* FlightManager.swift */; };
+		8767FB1525A32A0C004C7942 /* FlightData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767FB1425A32A0C004C7942 /* FlightData.swift */; };
+		879B135125A868B0004F20FD /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879B135025A868B0004F20FD /* ResultsViewController.swift */; };
+		879B135425A87601004F20FD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879B135325A87601004F20FD /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		8767FB0025A31F37004C7942 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8767FB0325A31F37004C7942 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8767FB0525A31F37004C7942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8767FB1125A329FB004C7942 /* FlightManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightManager.swift; sourceTree = "<group>"; };
+		8767FB1425A32A0C004C7942 /* FlightData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightData.swift; sourceTree = "<group>"; };
+		879B135025A868B0004F20FD /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		879B135325A87601004F20FD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		8767FAF625A31F33004C7942 /* FliteCounter */ = {
 			isa = PBXGroup;
 			children = (
+				879B135325A87601004F20FD /* Constants.swift */,
+				8767FB0C25A31F4B004C7942 /* Model */,
+				8767FB0D25A31F56004C7942 /* View */,
+				8767FB0E25A31F73004C7942 /* Controllers */,
 				8767FAF725A31F33004C7942 /* AppDelegate.swift */,
 				8767FAF925A31F33004C7942 /* SceneDelegate.swift */,
-				8767FAFB25A31F33004C7942 /* ViewController.swift */,
-				8767FAFD25A31F33004C7942 /* Main.storyboard */,
 				8767FB0025A31F37004C7942 /* Assets.xcassets */,
 				8767FB0225A31F37004C7942 /* LaunchScreen.storyboard */,
 				8767FB0525A31F37004C7942 /* Info.plist */,
 			);
 			path = FliteCounter;
+			sourceTree = "<group>";
+		};
+		8767FB0C25A31F4B004C7942 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8767FB1125A329FB004C7942 /* FlightManager.swift */,
+				8767FB1425A32A0C004C7942 /* FlightData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8767FB0D25A31F56004C7942 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8767FAFD25A31F33004C7942 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8767FB0E25A31F73004C7942 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8767FAFB25A31F33004C7942 /* ViewController.swift */,
+				879B135025A868B0004F20FD /* ResultsViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +174,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8767FAFC25A31F33004C7942 /* ViewController.swift in Sources */,
+				879B135425A87601004F20FD /* Constants.swift in Sources */,
+				8767FB1525A32A0C004C7942 /* FlightData.swift in Sources */,
+				8767FB1225A329FB004C7942 /* FlightManager.swift in Sources */,
 				8767FAF825A31F33004C7942 /* AppDelegate.swift in Sources */,
 				8767FAFA25A31F33004C7942 /* SceneDelegate.swift in Sources */,
+				879B135125A868B0004F20FD /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N2L88JPLDD;
 				INFOPLIST_FILE = FliteCounter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +349,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N2L88JPLDD;
 				INFOPLIST_FILE = FliteCounter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

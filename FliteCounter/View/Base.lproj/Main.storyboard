@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main App Interface-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Main App Interface" id="BYZ-38-t0r" customClass="ViewController" customModule="FliteCounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainBackground" translatesAutoresizingMaskIntoConstraints="NO" id="QxW-zx-Krm" userLabel="Background">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FliteCounter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFh-wV-7wb">
+                                <rect key="frame" x="76" y="95" width="262" height="58"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oBl-12-Xsg">
+                                <rect key="frame" x="0.0" y="680" width="414" height="216"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select an airline" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="AAU-LX-EF5" userLabel="makeSelectionLabel">
+                                <rect key="frame" x="108" y="414.5" width="198" height="132.5"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="oBl-12-Xsg" secondAttribute="bottom" id="2vI-QK-Hs1"/>
+                            <constraint firstAttribute="bottom" secondItem="QxW-zx-Krm" secondAttribute="bottom" id="34J-5i-2Bj"/>
+                            <constraint firstItem="oBl-12-Xsg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7do-YV-XVC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AAU-LX-EF5" secondAttribute="trailing" constant="108" id="7vK-vH-O8f"/>
+                            <constraint firstItem="QxW-zx-Krm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="B9D-yX-3oZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AAU-LX-EF5" secondAttribute="bottom" constant="315" id="C3v-3C-OZt"/>
+                            <constraint firstItem="oBl-12-Xsg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DQs-vr-VY8"/>
+                            <constraint firstItem="oBl-12-Xsg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GZO-tQ-XjE"/>
+                            <constraint firstItem="LFh-wV-7wb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="Sf4-hF-73b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LFh-wV-7wb" secondAttribute="trailing" constant="76" id="Tfa-qT-4OG"/>
+                            <constraint firstItem="oBl-12-Xsg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZVj-yr-H7c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LFh-wV-7wb" secondAttribute="bottom" constant="709" id="bXq-O4-5mp"/>
+                            <constraint firstItem="QxW-zx-Krm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="j4g-7L-zop"/>
+                            <constraint firstAttribute="bottom" secondItem="oBl-12-Xsg" secondAttribute="bottom" id="kMe-eZ-q4y"/>
+                            <constraint firstItem="AAU-LX-EF5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="l2P-ys-A1Y"/>
+                            <constraint firstItem="LFh-wV-7wb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="oyQ-Lc-NeF"/>
+                            <constraint firstItem="QxW-zx-Krm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xmW-GD-YVK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="airlinePicker" destination="oBl-12-Xsg" id="z2z-Xh-2dv"/>
+                        <segue destination="7tt-Sz-hmF" kind="presentation" identifier="goToResults" destinationCreationSelector="goToResults" id="cLG-C5-Efr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-784.05797101449286" y="-185.49107142857142"/>
+        </scene>
+        <!--ResultsViewController-->
+        <scene sceneID="feU-q7-HBF">
+            <objects>
+                <viewController title="ResultsViewController" id="7tt-Sz-hmF" customClass="ResultsViewController" customModule="FliteCounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mzP-f8-SoI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="resultsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="LkS-bz-OYX" userLabel="Results Background">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wbM-PE-oSz" userLabel="chooseAirlineButton">
+                                <rect key="frame" x="25" y="718" width="349" height="48"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="30"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Choose Another Airline"/>
+                                <connections>
+                                    <action selector="chooseAirlineButton:" destination="wJU-sa-HlP" eventType="touchUpInside" id="gQa-6C-MTH"/>
+                                    <action selector="chooseAirlineButtonPressed:" destination="7tt-Sz-hmF" eventType="touchUpInside" id="4M5-N0-ugr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X Airlines has" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpd-mK-usK" userLabel="airlineLabel">
+                                <rect key="frame" x="30" y="53" width="347" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="138" id="RgZ-PU-ePK"/>
+                                    <constraint firstAttribute="width" constant="347" id="yRU-np-plL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="active flights." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZeU-5U-BPJ" userLabel="activeFlightsLabel">
+                                <rect key="frame" x="30" y="315" width="130" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="EV8-Js-U0V"/>
+                                    <constraint firstAttribute="height" constant="90" id="mvT-B4-Wui"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXX" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjj-wu-iVm" userLabel="flightCountLabel">
+                                <rect key="frame" x="30" y="201" width="197" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="RhC-m0-dJ5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="90"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <color key="highlightedColor" systemColor="labelColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="v5k-XA-yBL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZeU-5U-BPJ" firstAttribute="leading" secondItem="v5k-XA-yBL" secondAttribute="leading" constant="30" id="2EK-Yl-T8j"/>
+                            <constraint firstItem="wbM-PE-oSz" firstAttribute="top" secondItem="ZeU-5U-BPJ" secondAttribute="bottom" constant="313" id="59s-NO-sc7"/>
+                            <constraint firstItem="wbM-PE-oSz" firstAttribute="leading" secondItem="v5k-XA-yBL" secondAttribute="leading" constant="25" id="8Oz-cn-iK1"/>
+                            <constraint firstItem="v5k-XA-yBL" firstAttribute="bottom" secondItem="vjj-wu-iVm" secondAttribute="bottom" constant="501" id="Epq-vb-uhu"/>
+                            <constraint firstItem="v5k-XA-yBL" firstAttribute="bottom" secondItem="cpd-mK-usK" secondAttribute="bottom" constant="617" id="LQ3-BR-f5j"/>
+                            <constraint firstAttribute="bottom" secondItem="LkS-bz-OYX" secondAttribute="bottom" id="MBN-LN-Ykk"/>
+                            <constraint firstItem="LkS-bz-OYX" firstAttribute="trailing" secondItem="v5k-XA-yBL" secondAttribute="trailing" id="PTD-UE-Dzx"/>
+                            <constraint firstItem="cpd-mK-usK" firstAttribute="leading" secondItem="v5k-XA-yBL" secondAttribute="leading" constant="30" id="cYm-qX-mVG"/>
+                            <constraint firstItem="LkS-bz-OYX" firstAttribute="top" secondItem="v5k-XA-yBL" secondAttribute="top" id="k4P-WN-994"/>
+                            <constraint firstItem="LkS-bz-OYX" firstAttribute="leading" secondItem="v5k-XA-yBL" secondAttribute="leading" id="kBX-FG-DZy"/>
+                            <constraint firstItem="vjj-wu-iVm" firstAttribute="leading" secondItem="v5k-XA-yBL" secondAttribute="leading" constant="30" id="kY9-VE-auL"/>
+                            <constraint firstItem="v5k-XA-yBL" firstAttribute="bottom" secondItem="wbM-PE-oSz" secondAttribute="bottom" constant="42" id="wWR-HN-pcW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activeFlightsLabel" destination="ZeU-5U-BPJ" id="MYT-89-Phq"/>
+                        <outlet property="airlineLabel" destination="cpd-mK-usK" id="rAL-Fh-Osc"/>
+                        <outlet property="flightCountLabel" destination="vjj-wu-iVm" id="PeZ-1L-RBq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Al6-Nd-mI5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="wJU-sa-HlP" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="89.855072463768124" y="-185.49107142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mainBackground" width="596" height="842"/>
+        <image name="resultsBackground" width="180" height="314"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
